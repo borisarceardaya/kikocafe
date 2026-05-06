@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KikoCafe - Especialidad en cafe de altura">
+    <meta name="keywords" content="cafeteria, cafe, espresso, latte, kikocafe">
+    <meta name="author" content="KikoCafe">
+    <title>KikoCafe</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body id="inicio" class="bg-warning-subtle">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark px-3">
+        <span class="navbar-brand fw-bold">☕ KikoCafe</span>
+        <div class="d-flex gap-2">
+            <a href="#inicio"   class="btn btn-outline-warning btn-sm">Inicio</a>
+            <a href="#galeria"  class="btn btn-outline-warning btn-sm">Galeria</a>
+            <a href="#menu"     class="btn btn-outline-warning btn-sm">Menu</a>
+            <a href="#resena"   class="btn btn-outline-warning btn-sm">Resena</a>
+            <a href="#video"    class="btn btn-outline-warning btn-sm">Video</a>
+            <a href="#cancion"  class="btn btn-outline-warning btn-sm">Cancion</a>
+        </div>
+    </nav>
+
+    <!-- PORTADA -->
+    <div class="position-relative mb-4">
+        <img src="kikocafe.png" alt="Portada KikoCafe" class="w-100" style="height:420px; object-fit:cover; filter:brightness(0.6);">
+        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3">
+            <a href="#menu" class="btn btn-warning fw-bold px-4">Ver Menu</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- GALERIA -->
+        <div id="galeria" class="card mb-4 border-warning">
+            <div class="card-body">
+                <h2 class="card-title"><b>Nuestra Galeria</b></h2>
+                <hr>
+
+                <div id="carruselKiko" class="carousel slide mb-3" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="kikocafe2.png" class="d-block w-100" style="height:400px; object-fit:cover;" alt="KikoCafe 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="kikocafe3.png" class="d-block w-100" style="height:400px; object-fit:cover;" alt="KikoCafe 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="kikocafe4.png" class="d-block w-100" style="height:400px; object-fit:cover;" alt="KikoCafe 4">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselKiko" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselKiko" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+                <div class="text-center">
+                    <a href="#inicio" class="btn btn-dark">Volver a Inicio</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENU -->
+        <div id="menu" class="card mb-4 border-warning">
+            <div class="card-body">
+                <h2 class="card-title"><b>Nuestro Menu</b></h2>
+                <hr>
+                <p><strong>Seleccion de especialidades</strong> preparadas con granos de <em>origen unico</em>.</p>
+                <br>
+
+                <!-- tabla del menu -->
+                <table class="table table-bordered table-hover table-striped">
+                    <tr class="table-dark">
+                        <th>Bebida</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td><b>Espresso Clasico</b></td>
+                        <td>Intenso y puro, extraido en 25 segundos perfectos</td>
+                        <td><b>$35</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Latte de Vainilla</b></td>
+                        <td>Espresso con leche vaporizada y toque de vainilla natural</td>
+                        <td><b>$55</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Mocca Artesanal</b></td>
+                        <td>Espresso, leche y cacao oscuro 70%</td>
+                        <td><b>$60</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Cold Brew 24h</b></td>
+                        <td>Macerado en frio durante 24 horas. Suave y refrescante</td>
+                        <td><b>$65</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Cafe de Olla</b></td>
+                        <td>Receta tradicional con canela y piloncillo</td>
+                        <td><b>$40</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Kiko Signature</b></td>
+                        <td>Creacion exclusiva: espresso, coco y caramelo salado</td>
+                        <td><b>$75</b></td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <!-- lista no ordenada <ul> -->
+                <p><strong>Puedes agregar extras:</strong></p>
+                <ul>
+                    <li>Leche de avena</li>
+                    <li>Leche de almendra</li>
+                    <li>Syrup de vainilla o caramelo</li>
+                    <li>Shot adicional de espresso</li>
+                </ul>
+
+                <!-- lista ordenada <ol> -->
+                <p><strong>Horarios de atencion:</strong></p>
+                <ol>
+                    <li>Lunes a Viernes: 7:00 am - 9:00 pm</li>
+                    <li>Sabado: 8:00 am - 10:00 pm</li>
+                    <li>Domingo: 9:00 am - 8:00 pm</li>
+                </ol>
+
+                <hr>
+                <div class="text-center">
+                    <a href="#inicio" class="btn btn-dark">Volver a Inicio</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESENA -->
+        <div id="resena" class="card mb-4 border-warning">
+            <div class="card-body">
+                <h2 class="card-title"><b>El Mejor Cafe</b></h2>
+                <hr>
+                <p><strong>Resena:</strong> En <em>KikoCafe</em> seleccionamos granos de altura de origen unico, tostados artesanalmente cada semana. Nuestros baristas garantizan que cada taza sea una experiencia unica.</p>
+                <br>
+
+                <!-- textarea con opiniones -->
+                <p><b>Opiniones de nuestros clientes:</b></p>
+                <textarea class="form-control mb-3" rows="5">
+★★★★★ Maria G.: "El mejor espresso que he probado. Volvere siempre!"
+★★★★★ Carlos R.: "El Kiko Signature me conquisto. El caramelo salado es unico."
+★★★★★ Sofia L.: "Ambiente acogedor y Cold Brew increible. Mi lugar favorito."
+                </textarea>
+
+                <hr>
+
+                <!-- formulario con input, select, textarea -->
+                <p><b>Deja tu resena:</b></p>
+
+                <input type="text" id="nombre" class="form-control mb-2" placeholder="Tu nombre">
+                <input type="email" id="correo" class="form-control mb-2" placeholder="Tu correo electronico">
+
+                <p>Calificacion:</p>
+                <select id="calificacion" class="form-select mb-2">
+                    <option value="5">★★★★★ - Excelente</option>
+                    <option value="4">★★★★☆ - Muy bueno</option>
+                    <option value="3">★★★☆☆ - Bueno</option>
+                    <option value="2">★★☆☆☆ - Regular</option>
+                    <option value="1">★☆☆☆☆ - Malo</option>
+                </select>
+
+                <p>Tu comentario:</p>
+                <textarea id="comentario" class="form-control mb-3" rows="3" placeholder="Escribe tu experiencia en KikoCafe..."></textarea>
+
+                <button class="btn btn-dark" onclick="mostrarResena()">Enviar Resena</button>
+
+                <br><br>
+
+                <!-- resultado con document.getElementById -->
+                <div id="resultado" style="display:none;" class="alert alert-warning mt-2">
+                    <pre id="textoIngresado"></pre>
+                    <button class="btn btn-dark btn-sm" onclick="regresar()">Regresar</button>
+                </div>
+
+                <hr>
+                <div class="text-center">
+                    <a href="#inicio" class="btn btn-dark">Volver a Inicio</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIDEO -->
+        <div id="video" class="card mb-4 border-warning text-center">
+            <div class="card-body">
+                <h2 class="card-title"><b>Conocenos en Video</b></h2>
+                <hr>
+                <video width="100%" class="rounded mb-3" style="max-width:620px;" controls>
+                    <source src="kikocafevideo.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <br>
+                <a href="#inicio" class="btn btn-dark">Volver a Inicio</a>
+            </div>
+        </div>
+
+        <!-- CANCION -->
+        <div id="cancion" class="card mb-4 border-warning text-center">
+            <div class="card-body">
+                <h2 class="card-title"><b>Nuestra Cancion</b></h2>
+                <hr>
+                <p><i>El soundtrack perfecto para acompanar tu cafe</i></p>
+                <br>
+                <video controls class="rounded mb-3 w-100" style="max-width:460px;">
+                    <source src="Aroma_de_amanecer.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+                <br>
+                <a href="#inicio" class="btn btn-dark">Volver a Inicio</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-warning text-center py-4 mt-4">
+        <p><b>KikoCafe</b></p>
+        <p><i>Especialidad en cafe de altura · Lunes a Domingo 7:00 - 21:00</i></p>
+        <br>
+        <a href="#" class="text-warning fs-4 me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-warning fs-4 me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-warning fs-4 me-3"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-warning fs-4"><i class="bi bi-tiktok"></i></a>
+        <br><br>
+        <p><small>© 2025 KikoCafe · Todos los derechos reservados</small></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+
+        // document.getElementById para formulario de resena
+        function mostrarResena() {
+            var nombre       = document.getElementById('nombre').value;
+            var calificacion = document.getElementById('calificacion').options[document.getElementById('calificacion').selectedIndex].text;
+            var comentario   = document.getElementById('comentario').value;
+
+            document.getElementById('resultado').style.display = 'block';
+            document.getElementById('textoIngresado').innerText =
+                'Gracias, ' + nombre + '!\n' +
+                'Calificacion: ' + calificacion + '\n' +
+                'Comentario: ' + comentario;
+        }
+
+        function regresar() {
+            document.getElementById('resultado').style.display = 'none';
+        }
+
+    </script>
+
+</body>
+</html>
